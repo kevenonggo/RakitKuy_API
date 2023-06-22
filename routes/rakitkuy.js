@@ -31,9 +31,9 @@ router.get('/', async (req, res) => {
             {
                 $set: {
                     id: '$_id',
-                    username: { $arrauElemAt: ['$userData.username', 0]},
-                    created_date: { $dateToString: { format: '%d-%m-%Y %H:%M:%S', date: $created_date, timezone: '+07:00'}},
-                    modified_date: { $dateToString: { format: '%d-%m-%Y %H:%M:%S', date: $modified_date, timezone: '+07:00'}}
+                    username: { $arrayElemAt: ['$userData.username', 0]},
+                    created_date: { $dateToString: { format: '%d-%m-%Y %H:%M:%S', date: '$created_date', timezone: '+07:00'}},
+                    modified_date: { $dateToString: { format: '%d-%m-%Y %H:%M:%S', date: '$modified_date', timezone: '+07:00'}}
                 }
             },
             {
