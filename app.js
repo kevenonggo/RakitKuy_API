@@ -19,7 +19,7 @@ app.use('/auth', authRoutes)
 app.use('/rakitkuy', rakitkuyRoutes)
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Welcome RakitKuy REST API')
 })
 
 mongoose.connect(process.env.DB_CONNECTION, {
