@@ -1,0 +1,35 @@
+{
+  "name": "rakitkuy_api",
+  "version": "1.0.0",
+  "description": "rest api menggunakan express.js,",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevenonggo/RakitKuy_API.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "KevenOnggo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevenonggo/RakitKuy_API/issues"
+  },
+  "homepage": "https://github.com/kevenonggo/RakitKuy_API#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "mongoose": "^7.3.1",
+    "nodemon": "^1.14.9"
+  }
+}
